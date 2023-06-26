@@ -38,7 +38,7 @@ import poly.edu.ass.model.Student;
  */
 public class QuanLySinhVien extends javax.swing.JFrame {
     private String header[] ={"Mã SV","Họ tên","Email","Số ĐT","Giới tính","Địa chỉ","Hình"};
-    private static String URL = "jdbc:sqlserver://localhost:1433;databaseName=FPL_DaoTao;user=sa;password=123;encrypt=true;trustServerCertificate=true";
+    private static String URL = "jdbc:sqlserver://localhost:1433;databaseName=FPL_DaoTao;user=sa;password=123456;encrypt=true;trustServerCertificate=true";
    DefaultTableModel tblModel = new DefaultTableModel(header,0);
    String namePic = "";
     String p_sdt = "0[0-9]{9}";

@@ -24,7 +24,7 @@ import poly.edu.ass.sevices.UserServices;
  * @author admin
  */
 public class Login extends javax.swing.JFrame {
- private static String URL = "jdbc:sqlserver://localhost:1433;databaseName=FPL_DaoTao;user=sa;password=123;encrypt=true;trustServerCertificate=true";
+ private static String URL = "jdbc:sqlserver://localhost:1433;databaseName=FPL_DaoTao;user=sa;password=123456;encrypt=true;trustServerCertificate=true";
     public Login() {
         initComponents();
         setLocationRelativeTo(null);

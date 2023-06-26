@@ -24,7 +24,7 @@ import poly.edu.ass.model.Grade;
  */
 public class QuanLyDiemSinhVien extends javax.swing.JFrame {
     private String header[] ={"Mã SV","Họ tên","Tiếng Anh","Tin Học","GDTC","ĐIểm TB"};
-    private static String URL = "jdbc:sqlserver://localhost:1433;databaseName=FPL_DaoTao;user=sa;password=123;encrypt=true;trustServerCertificate=true";
+    private static String URL = "jdbc:sqlserver://localhost:1433;databaseName=FPL_DaoTao;user=sa;password=123456;encrypt=true;trustServerCertificate=true";
     DefaultTableModel tblModel = new DefaultTableModel(header,0);
     
     private ArrayList<Grade> list = new ArrayList<>();
@@ -493,11 +493,12 @@ public class QuanLyDiemSinhVien extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnUpdate)))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnNext)
-                    .addComponent(btnPrev)
-                    .addComponent(btnLast)
-                    .addComponent(btnFirs, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnFirs, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnNext)
+                        .addComponent(btnPrev)
+                        .addComponent(btnLast)))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
